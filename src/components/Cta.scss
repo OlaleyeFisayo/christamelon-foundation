@@ -1,0 +1,71 @@
+.cta {
+  width: 100%;
+  border-radius: 20px;
+  background-image: url("../assets/svg/event-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 91px 0;
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #e8ebf0;
+    font-size: 48px;
+    line-height: 58px;
+    width: 100%;
+    max-width: 895px;
+    margin: 0 auto 32px;
+
+    @media (max-width: 530px) {
+      font-size: 24px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+
+    button {
+      border: none;
+      background: #096a56;
+      padding: 16px 32px;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #e8ebf0;
+      cursor: pointer;
+
+      @media (max-width: 530px) {
+        padding: 16px 10px;
+      }
+    }
+
+    button:hover {
+      background: #e8ebf0;
+      color: #096a56;
+    }
+
+    a {
+      border-radius: 4px;
+      padding: 16px 32px;
+      background: #e8ebf0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #096a56;
+      text-decoration: none;
+
+      @media (max-width: 530px) {
+        padding: 16px 10px;
+      }
+    }
+
+    a:hover {
+      background: #096a56;
+      color: #e8ebf0;
+    }
+  }
+}

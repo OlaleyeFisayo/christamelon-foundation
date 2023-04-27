@@ -1,0 +1,96 @@
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    .project {
+      width: 100%;
+      max-width: 361px;
+      height: 421px;
+      border-radius: 10px;
+      border: none;
+      padding: 55px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      @media (max-width:900px) {
+        align-items: center;
+      }
+
+      @media (max-width: 430px) {
+        height: auto;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        color: #ffffff;
+        margin: 0;
+
+        @media (max-width: 1000px) {
+          font-size: 23px;
+        }
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16x;
+        line-height: 26px;
+        color: #ffffff;
+
+        @media (max-width: 1000px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+
+      a {
+        background: #e8ebf0;
+        border-radius: 4px;
+        padding: 16px 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #096a56;
+        text-decoration: none;
+        width: 149px;
+      }
+
+      a:hover{
+        background: #096a56;
+        color: #e8ebf0;
+      }
+    }
+
+    .project:first-of-type {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../assets/svg/projectOne.svg");
+    }
+
+    .project:nth-of-type(2) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../assets/svg/projectTwo.svg");
+    }
+
+    .project:nth-of-type(3) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../assets/svg/projectThree.svg");
+    }
+  }

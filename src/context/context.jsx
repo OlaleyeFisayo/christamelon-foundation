@@ -19,6 +19,13 @@ function ContextProvider({ children }) {
 
   const hidePopUp = () => {
     setPopUp(false);
+    setErrors({});
+    setFormValues({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
   };
 
   const showNavBar = () => {

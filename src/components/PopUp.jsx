@@ -1,49 +1,11 @@
 import "./PopUp.scss";
 import closeButton from "../assets/svg/closeButton.svg";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { myContent } from "../context/context";
 
 export default function PopUp() {
-  const { hidePopUp } = useContext(myContent);
-  const [formValues, setFormValues] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
-  const [errors, setErrors] = useState({});
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Validate form here
-    const validationErrors = {};
-    if (!formValues.firstName) {
-      validationErrors.firstName = "First name is required";
-    }
-    if (!formValues.lastName) {
-      validationErrors.lastName = "Last name is required";
-    }
-    if (!formValues.email) {
-      validationErrors.email = "Email is required";
-    }
-    if (!formValues.message) {
-      validationErrors.message = "Message is required";
-    }
-    if (Object.keys(validationErrors).length === 0) {
-      // Submit form if there are no errors
-      console.log("Form submitted successfully!");
-    } else {
-      // Display validation errors
-      setErrors(validationErrors);
-    }
-  };
-
-  const handleChange = (e) => {
-    setFormValues({
-      ...formValues,
-      [e.target.id]: e.target.value,
-    });
-  };
+  const { hidePopUp, handleChange, handleSubmit, errors, formValues } =
+    useContext(myContent);
 
   return (
     <div className="popup">

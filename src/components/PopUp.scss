@@ -16,6 +16,8 @@
     padding: 48px;
     color: #1d2130;
     position: relative;
+    height: 640px;
+    overflow-y: scroll;
 
     .closeButton {
       position: absolute;
@@ -89,4 +91,10 @@
       }
     }
   }
+}
+
+.error {
+  color: red !important;
+  font-size: 12px !important;
+  margin-top: 4px;
 }

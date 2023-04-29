@@ -72,10 +72,11 @@ export default function About() {
             </div>
           </div>
         </section>
-        <SupportersSection 
-          color="#e7f2f7"
-        />
+        <SupportersSection color="#e7f2f7" />
         <EventSection />
+        <section id="awards">
+          <div className="award-content"></div>
+        </section>
       </section>
     </>
   );
